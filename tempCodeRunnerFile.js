@@ -1,0 +1,1 @@
+var number = (busStops)=>busStops.reduce((rem,[inn,out])=>rem+inn-out,0);
