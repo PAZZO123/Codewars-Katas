@@ -1,4 +1,9 @@
 const wordCount = (s) => {
+    //make array of exception word
+    //check if word is made of characters
+    //check if word is in exception
+    //push the word in the array of corrected words
+    //return the length of reduced array
   const exclude = ["a", "the", "on", "at", "of", "upon", "in", "as"];
   const result = [];
   let word = "";
