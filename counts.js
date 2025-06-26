@@ -12,3 +12,4 @@ function deleteNth(arr, n) {
 
   return result;
 }
+console.log( deleteNth([1,2,3,3,3,3,2,2,2,4,4,5,5,5,5,],1));//[ 1, 2, 3, 4, 5 ]
