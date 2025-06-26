@@ -1,1 +1,3 @@
-var noSpace=(x)=>x.split(' ').join("");
+var noSpace=(x)=>x.replaceAll(" ","");
+console.log(noSpace("hello wor d"));
+//split(' ').join("");
