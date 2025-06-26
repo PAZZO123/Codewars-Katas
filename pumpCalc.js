@@ -4,4 +4,10 @@ Considering these factors, write a function that tells you if it is possible to 
 
 Function should return true if it is possible and false if not.*/
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => fuelLeft*mpg>=distanceToPump;
-  
+  //array of reversed number
+const reverseSeq = n => { var arr=[];
+                         for(var i=n;i>0;i--){
+                           arr.push(i);
+                         }
+  return arr;
+};
