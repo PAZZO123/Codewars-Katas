@@ -6,3 +6,8 @@ function toNumberArray(stringarray){
   }
   return num;
 }
+//number to string
+function numberToString(num) {
+  // Return a string of the number here!
+  return num.toString();
+}
