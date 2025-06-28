@@ -17,3 +17,9 @@ function rentalCarCost(d) {
   var result=d<3?d*40:d>=3&&d<7?(d*40)-20:(d*40)-50;
   return result
 }
+//calculate volume
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+  return length*width*height;
+  }
+}
