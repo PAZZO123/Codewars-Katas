@@ -23,3 +23,5 @@ class Kata {
   return length*width*height;
   }
 }
+//string to num
+const stringToNumber = (str)=> Number(str);
