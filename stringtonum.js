@@ -18,3 +18,7 @@ function findSmallestInt(arr) {
   
   return arr[0];
 }
+//double int
+function doubleInteger(i) {
+  return i*2;
+}
