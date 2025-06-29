@@ -30,4 +30,7 @@ Examples (Input -> Output):
 * "Hello World" -> "HHeelllloo  WWoorrlldd"
 * "1234!_ "     -> "11223344!!__  */
 var doubleChar=(str) =>str.split('').map((n)=>n+n).join('')
+/*Create a function that gives a personalized greeting. This function takes two parameters: name and owner.*/
+
+var  greet =(name, owner)=>name===owner? 	'Hello boss':'Hello guest'
 
