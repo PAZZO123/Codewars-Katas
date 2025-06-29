@@ -19,3 +19,7 @@ var hoopCount =(n)=>n>=10?"Great, now move on to tricks":"Keep at it until you g
 //dragon killed
 var hero=(bullets, dragons)=>bullets>=dragons*2;
 
+//return years
+var getAge=(inputString) => parseInt(inputString);
+console.log(getAge('8 years old'))//8
+
