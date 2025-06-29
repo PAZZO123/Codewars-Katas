@@ -12,3 +12,7 @@ function checkVowel(string, position) {
 }
 var check=checkVowel('Pazoo',3);
 console.log(check);
+
+//hop count 8kyu
+var hoopCount =(n)=>n>=10?"Great, now move on to tricks":"Keep at it until you get it"
+      
