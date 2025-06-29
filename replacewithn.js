@@ -12,4 +12,5 @@ function alphabetPosition(text) {
  
   return result.join(' ');
 }
-console.log(alphabetPosition("hello my manager"))
+var alph=(text)=>text.toLowerCase().split('').map(a=>(a.charCodeAt(0)-96)).filter(a=>a>0 && a<27).join(' ');
+console.log(alph("hello my manager"))
