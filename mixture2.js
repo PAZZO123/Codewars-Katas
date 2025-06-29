@@ -16,3 +16,6 @@ console.log(check);
 //hop count 8kyu
 var hoopCount =(n)=>n>=10?"Great, now move on to tricks":"Keep at it until you get it"
       
+//dragon killed
+var hero=(bullets, dragons)=>bullets>=dragons*2;
+
