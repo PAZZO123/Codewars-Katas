@@ -4,5 +4,5 @@ function removeChar(str){
   str.pop();
   return str.join('');
 
-};
+}
 //return str.slice(1,-1)
