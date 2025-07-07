@@ -14,5 +14,5 @@ function vowel2index(str) {
     }
   }
 
-  return result;
+  return result
 }
