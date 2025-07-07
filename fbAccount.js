@@ -1,5 +1,5 @@
 var facebookProfile={
-    name: "Pazzo",
+    name: "Pazzo Patrick",
     friends:55,
     messages:["hello","hi there","xup kapo","muraho"],
     postMessage: function(message){
