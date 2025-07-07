@@ -4,6 +4,6 @@ function capitalizeOdd(str){
         return n+m
         
     },"")
-    return capital
+    return capital;
 }
-console.log(capitalizeOdd("Javascript"))
+console.log(capitalizeOdd("Javascript"));
