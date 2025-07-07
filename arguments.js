@@ -14,11 +14,11 @@ function multiply(...args) {
     if (typeof args[0] === 'number' && typeof args[1] === 'number') {
       return args[0] * args[1];
     } else {
-      throw new Error("Both arguments must be numbers");
+      throw new Error("Both arguments must be numbers")
     }
   } else {
-    throw new Error("Invalid number of arguments");
+    throw new Error("Invalid number of arguments")
   }
 }
-console.log(multiply([1,2,3,4]))
+console.log(multiply([1,2,3,4]));
 console.log(multiply(2));
