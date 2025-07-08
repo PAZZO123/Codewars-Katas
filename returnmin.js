@@ -8,28 +8,27 @@ function clamp(number, a, b, result) {
     max = b;
   }
 
-  // Number is in range: return as-is
+  
   if (number >= min && number <= max) return number;
 
-  // If result (4th argument) is provided, use it
+  // If result 
   if (arguments.length === 4) {
     if (typeof result === 'function') {
       return result(number, min, max);
     }
-    return result; // could be number, string, boolean, etc.
+    return result; 
   }
 
-  // Default clamp behavior
+  
   if (number < min) return min;
   if (number > max) return max;
 }
-clamp( 5, 10 )    // -> 5
-clamp(-5, 10 )    // -> 0
-clamp(15, 10 )    // -> 10
+clamp( 5, 10 )    // 5
+clamp(15, 10 )    // 10
 
-clamp( 5, 2, 12 ) // -> 5
-clamp( 0, 2, 12 ) // -> 2
-clamp(15, 2, 12 ) // -> 12
+clamp( 5, 2, 12 ) //  5
+clamp( 0, 2, 12 ) // 2
+clamp(15, 2, 12 ) // 12
 
 // -- result value provided...
 clamp( 0, 2, 12, 6 )     // -> 6 
