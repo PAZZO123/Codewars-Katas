@@ -11,5 +11,5 @@ function sumDigPow(a, b) {
       }
     }
   }
-  return sumdig
+  return sumdig; //6 kyu
 }
