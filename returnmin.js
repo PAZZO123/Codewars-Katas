@@ -43,3 +43,9 @@ clamp( 7, 2, 12, "???" ) // -> 7 )
 // -- result provided by a function
 var mid = function(n,a,b){ return a+(b-a)/2 }
 clamp( 0, 2, 12, mid ) // -> 7 ( = 2+(12-2)/2 )
+/*result (fourth argument) may be :
+a number
+a string
+a boolean
+a date
+a function, whith number, min & max as proper arguments*/
