@@ -13,3 +13,4 @@ function sumDigPow(a, b) {
   }
   return sumdig; //6 kyu
 }
+console.log(sumDigPow(10, 100));
