@@ -4,3 +4,6 @@ var findDifference=(a, b) =>{
   return prod1<prod2?prod2-prod1:prod1-prod2
 }
   
+//grassopper terminal game
+var move= (position, roll) =>roll*2+position
+  
