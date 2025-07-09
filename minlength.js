@@ -1,0 +1,1 @@
+var  findShort=(s)=>s.split(' ').reduce((min, n)=>Math.min(min ,n.length),Infinity)
