@@ -39,7 +39,7 @@ clamp( 7, 2, 12, 6 )     // -> 7 )
 clamp( 7, 2, 12, false ) // -> 7 } because 7 is in the range [2,12]
 clamp( 7, 2, 12, "???" ) // -> 7 )
 
-// -- result provided by a function
+// -- result a function
 var mid = function(n,a,b){ return a+(b-a)/2 }
 clamp( 0, 2, 12, mid ) // -> 7 ( = 2+(12-2)/2 )
 /*result (fourth argument) may be :
