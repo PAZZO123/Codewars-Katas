@@ -12,4 +12,4 @@ const disemvowel = (str) => {
   
   return newStr;
 };
-console.log(disemvowel("Hello world"))
+console.log(disemvowel("Hello world and hi"))
