@@ -14,3 +14,4 @@ function printerError(s) {
     return count+'/'+s.length;
 }
 console.log(printerError("gdhgshsjskxsnxnbnbcnb"));
+//errors printed
