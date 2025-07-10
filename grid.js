@@ -23,3 +23,4 @@ Hero.prototype.move = function (dir) {
 
   this.position = `${this.x}${this.y}`;
 };
+console.log(Hero.prototype.move('down'))
