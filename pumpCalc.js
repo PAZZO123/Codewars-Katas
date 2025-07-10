@@ -11,3 +11,4 @@ const reverseSeq = n => { var arr=[];
                          }
   return arr;
 };
+//pumped
