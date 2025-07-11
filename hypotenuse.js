@@ -12,3 +12,4 @@ function calculateHypotenuse(a, b) {
   const hypotenuse = Math.sqrt(a ** 2 + b ** 2);
   return Number(hypotenuse.toFixed(3));
 }
+console.log(calculateHypotenuse(3))
