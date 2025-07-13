@@ -6,4 +6,6 @@ var findDifference=(a, b) =>{
   
 //grassopper terminal game
 var move= (position, roll) =>roll*2+position
+//test
+findDifference(move([1,2,3],[3,4,5]),8)
   
