@@ -33,4 +33,7 @@ var doubleChar=(str) =>str.split('').map((n)=>n+n).join('')
 /*Create a function that gives a personalized greeting. This function takes two parameters: name and owner.*/
 
 var  greet =(name, owner)=>name===owner? 	'Hello boss':'Hello guest'
+//postion of character
+var position=(letter)=>`Position of alphabet: ${letter.charCodeAt(0)-96}`
+
 
