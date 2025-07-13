@@ -20,3 +20,5 @@ var summation = function (num) {
   }
   return sum;
 }
+//test
+console.log(uniqueInOrder([2,5,6,7,8,9,8,9,0]))
