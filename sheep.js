@@ -5,5 +5,5 @@ var countSheep = function (num){
   }
   return result
 }
-//reverse array
+//reverse arrays
 var reverseList=(list) =>list.reverse()
