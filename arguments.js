@@ -20,5 +20,7 @@ function multiply(...args) {
     throw new Error("Invalid number of arguments")
   }
 }
+//test
 console.log(multiply([1,2,3,4]));
 console.log(multiply(2));
+console.log(multiply(2,5))
