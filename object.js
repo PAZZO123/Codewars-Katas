@@ -15,3 +15,4 @@ Object.defineProperty(person, "fullName", {
 var result = Object.getOwnPropertyNames(person);
 console.log(result);           // ['firstName', 'lastName', 'language', 'fullName']
 console.log(person.fullName); // John Doe objects
+//test
