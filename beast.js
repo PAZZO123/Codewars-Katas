@@ -4,3 +4,5 @@ Write a function feast that takes the animal's name and dish as arguments and re
 
 Assume that beast and dish are always lowercase strings, and that each has at least two letters. beast and dish may contain hyphens and spaces, but these will not appear at the beginning or end of the string. They will not contain numerals.*/
 var feast=(beast, dish) =>beast.startsWith(dish.charAt(0))&& beast.endsWith(dish.charAt(dish.length-1));
+//test
+console.log(feast('baeast','beat first'))
