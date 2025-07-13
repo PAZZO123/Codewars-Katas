@@ -6,3 +6,4 @@ Numbers will be positive. The hexadecimal string should be lowercased.*/
 
 var evensAndOdds=(num)=>num%2===0?num.toString(2):num.toString(16);
 console.log(evensAndOdds(9))
+//test 
