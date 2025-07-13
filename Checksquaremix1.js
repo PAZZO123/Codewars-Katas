@@ -17,5 +17,6 @@ var isSquare = function(n){
    return false;
  // return false; // fix me
 }
+//test
 var isSqua=n=>Math.sqrt(n)%1===0;
 console.log(isSqua(3));
