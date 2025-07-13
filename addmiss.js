@@ -7,3 +7,4 @@ function pipeFix(numbers){
   return result
 
 }
+console.log(pipeFix([1,16]))
