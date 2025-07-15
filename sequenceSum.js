@@ -4,4 +4,4 @@ const sequenceSum = (begin, end, step) => {
   return sum<=0?0:sum
 }
 
-console.log(sequenceSum(2,12,2))
+console.log(sequenceSum(2,12,2))//sum
