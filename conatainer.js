@@ -1,0 +1,1 @@
+const strCount = (str, letter) => [...str].reduce((count, char) => char === letter ? count + 1 : count, 0);
