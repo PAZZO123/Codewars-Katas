@@ -19,4 +19,4 @@ function longestConsec(strarr, k) {
   }
   return arr.filter(n=>n.length===maxLength)[0]
 }
-//test
+//test console
