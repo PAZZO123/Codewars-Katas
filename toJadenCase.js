@@ -10,4 +10,4 @@ Object.defineProperty(
   }
 );
 // test
-console.log('i am a winner'.toJadenCase())
+console.log('i am a winners of the year'.toJadenCase())
