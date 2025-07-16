@@ -9,5 +9,5 @@ Object.defineProperty(
    }
   }
 );
-// test
+// test in console
 console.log('i am a winners of the year'.toJadenCase())
