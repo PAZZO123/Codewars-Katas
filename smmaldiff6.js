@@ -18,4 +18,4 @@ function oneCharDifference(s1, s2) {
    //test console
    console.log(oneCharDifference('grant', 'gant')) //true
    console.log(oneCharDifference('grant', 'grent'))//true
-   console.log(oneCharDifference('grant', 'grant'))
+   console.log(oneCharDifference('grant', 'grant'))//false
