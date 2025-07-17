@@ -15,4 +15,4 @@ function oneCharDifference(s1, s2) {
 
   return maxLength===count+1 ||(count===maxLength && (s1.length===s2.length+1 ||s1.length+1===s2.length))
    }
-   //test
+   //test console
