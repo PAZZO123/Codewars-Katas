@@ -8,4 +8,4 @@ var count=0
   }
   return count
 }
-//test
+//test console
