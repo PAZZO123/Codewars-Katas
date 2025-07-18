@@ -6,5 +6,5 @@ var maxSequence = function(arr){
   }
   return max
 }
-//test
+//test console
 console.log(maxSequence([1,2,3,-1,-6,7,3]))
