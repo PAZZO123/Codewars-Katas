@@ -8,3 +8,4 @@ function findNb(m) {
   return sum === m ? n : -1;
 }
 //test console
+//m==n^3+(n-1)^3+................+1^3?n:-1
