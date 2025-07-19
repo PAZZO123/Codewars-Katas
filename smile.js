@@ -9,3 +9,4 @@ var count=0
   return count
 }
 //test console
+console.log(countSmileys(['a','b',':D']))
