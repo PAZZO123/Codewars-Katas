@@ -7,3 +7,4 @@ function findNb(m) {
   }
   return sum === m ? n : -1;
 }
+//test console
