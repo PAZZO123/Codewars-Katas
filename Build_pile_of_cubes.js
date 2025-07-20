@@ -9,4 +9,4 @@ function findNb(m) {
 }
 //test console
 //m==n^3+(n-1)^3+................+1^3?n:-1
-console.log(findNb(63637345))
+console.log(findNb(63637345))// ans -1
