@@ -5,4 +5,4 @@ function checkExam=(array1, array2) =>Math.max(array1.reduce((c,el,i)=>array2[i]
 //    array2[i]===""?count+=0:array1[i]===array2[i]?count+=4:count-=1  
 //  }
 //   return count>0?count:0;
-}
+// }
