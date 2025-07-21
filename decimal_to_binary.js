@@ -1,3 +1,3 @@
 var toBinary=(n)=>+n.toString(2)
 //test
-c
+console.log(toBinary(2))//10
