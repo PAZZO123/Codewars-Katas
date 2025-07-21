@@ -17,4 +17,4 @@ for( let word of textArr ){
  return target.map(el=>el[0])
  
 }
-//test
+//test console
