@@ -1,4 +1,4 @@
-function checkExam=(array1, array2) =>Math.max(array1.reduce((c,el,i)=>array2[i]===el?c+=4:array2[i]===''?c+=0:c-=1,0),0)
+var checkExam=(array1, array2) =>Math.max(array1.reduce((c,el,i)=>array2[i]===el?c+=4:array2[i]===''?c+=0:c-=1,0),0)
 // {
 //  var count=0
 //  for(var i=0;i<array1.length;i++){
