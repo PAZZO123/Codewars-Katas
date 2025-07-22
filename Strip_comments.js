@@ -12,4 +12,4 @@ function solution(text, markers) {
     })
     .join('\n');
 }
-//test
+//test console
