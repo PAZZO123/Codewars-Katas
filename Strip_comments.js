@@ -12,3 +12,4 @@ function solution(text, markers) {
     })
     .join('\n');
 }
+//test
