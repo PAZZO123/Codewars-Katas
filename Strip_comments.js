@@ -13,4 +13,7 @@ function solution(text, markers) {
     .join('\n');
 }
 //test console
-console.log(solution('hello * mine \n end of comment ! start \nend # comments \nnow',['*','!','#']))
+console.log(solution('hello * mine \n end of comment ! start \nend # comments \nnow',['*','!','#']))/*hello
+ end of comment
+end
+now*/
