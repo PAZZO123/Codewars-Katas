@@ -1,0 +1,1 @@
+String.prototype.toString=function(){return String(this)}
