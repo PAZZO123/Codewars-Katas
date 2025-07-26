@@ -18,3 +18,4 @@ for( let word of textArr ){
  
 }
 //test console
+console.log(topThreeWords('The love of God is enough of me course,then The way he love is enough'))
