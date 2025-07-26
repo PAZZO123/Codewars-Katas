@@ -1,3 +1,3 @@
 String.prototype.toString=function(){return String(this)}
-//test
+//test console
 console.log(Math.PI.toString())
