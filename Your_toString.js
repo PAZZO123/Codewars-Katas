@@ -1,2 +1,2 @@
-String.prototype.toStrings=function(){return String(this)}
-console.log(Math.PI.toStrings())
+String.prototype.toString=function(){return String(this)}
+console.log(Math.PI.toString())
