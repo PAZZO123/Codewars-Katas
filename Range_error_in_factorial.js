@@ -3,4 +3,4 @@ function factorial(n) {
     throw new RangeError();
   return n <= 1 ? 1 : n * factorial(n - 1);
 }
-//test
+//test console
