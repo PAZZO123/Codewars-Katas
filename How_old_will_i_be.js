@@ -3,3 +3,5 @@ y1===y2?`You were born this very year!`:(y1-y2)===1?
 "You will be born in "+ (y1-y2)+" year.":"You will be born in "+ (y1-y2)+" years."
 
 
+//test 
+console.log(calculateAge(2002,2025))
