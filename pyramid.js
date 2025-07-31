@@ -12,3 +12,4 @@ function longestSlideDown(pyramid) {
   return temp[0][0];
 }
 //plamid??
+console.log(longestSlideDown([[2],[3,4]]))
