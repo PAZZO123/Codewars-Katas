@@ -1,0 +1,2 @@
+const gimme = arr => [...arr].indexOf(arr.sort((a,b) => a-b)[1]);
+
