@@ -11,3 +11,4 @@ function maxAndMin(arr1,arr2){
   return[Math.max(...result),Math.min(...result)]
 }
 //test cases
+console.log(maxAndMin([3,10,5],[20,7,15,8])) //[17,2]
