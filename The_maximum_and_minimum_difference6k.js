@@ -10,3 +10,4 @@ function maxAndMin(arr1,arr2){
   }
   return[Math.max(...result),Math.min(...result)]
 }
+//test cases
