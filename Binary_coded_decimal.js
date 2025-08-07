@@ -3,3 +3,4 @@ function toBcd(n){
          "-"+Math.abs(n).toString().split('').map(n=>Number(n).toString(2).padStart(4,'0')).join(' '))
 }
 //test cases
+console.log(toBcd(10))//"0001 0000"
