@@ -4,3 +4,4 @@ function toBcd(n){
 }
 //test cases
 console.log(toBcd(10))//"0001 0000"
+console.log(toBcd(-10))//"-0001 0000"
