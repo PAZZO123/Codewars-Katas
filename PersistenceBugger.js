@@ -19,3 +19,4 @@ function persistence(num) {
    count++;
   }
   return count;}
+  console.log(persistence(39))
