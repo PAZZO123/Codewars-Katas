@@ -12,4 +12,4 @@ if(number<0) return 0
   return sum
 }
 //test cases
-console.log(10)
+console.log(solution(10))//23
