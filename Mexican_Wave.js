@@ -12,3 +12,5 @@ function wave(str) {
           return (str.slice(0, i) + str.charAt(i).toUpperCase() + str.slice(i + 1) );
         }).slice(0,str.length).filter(Boolean) : [];
 }
+//test case
+console.log(wave("s p a c e s"))
