@@ -14,3 +14,4 @@ function wave(str) {
 }
 //test case
 console.log(wave("s p a c e s"))
+//['S p a c e s','s P a c e s','s p A c e s','s p a C e s','s p a c E s','s p a c e S']
