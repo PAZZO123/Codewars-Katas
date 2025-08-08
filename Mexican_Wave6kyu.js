@@ -15,3 +15,6 @@ function wave(str) {
 //test case
 console.log(wave("s p a c e s"))
 //['S p a c e s','s P a c e s','s p A c e s','s p a C e s','s p a c E s','s p a c e S']
+function wave(str){
+  return str.split('').reduce((p,c,i) => c !== ' ' ? (p.push(str.slice(0, i) + str[i].toUpperCase() + str.slice(i+1, str.length)), p) : p,[]);
+}
