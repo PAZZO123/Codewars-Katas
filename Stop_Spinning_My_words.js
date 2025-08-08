@@ -6,3 +6,4 @@
 const spinWords =(string)=>string.split(' ').map((n)=>n.length>=5?n.split('').reverse().join(''):n).join(' ')
 
 //test cases
+console.log(spinWords('stop spinning my words'))//stop gninnips my sdrow
