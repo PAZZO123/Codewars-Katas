@@ -13,3 +13,4 @@ function digitalRoot(n) {
     }}
   return n
 }
+console.log(digitalRoot(19))//2
