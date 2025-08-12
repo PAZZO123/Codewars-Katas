@@ -5,3 +5,4 @@
 const createPhoneNumber=(n)=>`(${n.slice(0,3).join('')}) ${n.slice(3,6).join('')}-${n.slice(6).join('')}` 
 
 //test cases
+console.log(createPhoneNumber([0,7,8,1,4,8,4,4,0,7]))
