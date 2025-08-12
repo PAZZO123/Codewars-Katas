@@ -13,4 +13,5 @@ function digitalRoot(n) {
     }}
   return n
 }
+//test cases
 console.log(digitalRoot(19))//2
