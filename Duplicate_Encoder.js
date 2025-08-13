@@ -4,4 +4,4 @@ function duplicateEncode(word){
     return  words.map((el,i)=>duplicate.includes(el)?words[i]=")":words[i]='(').join('')
 }
 //test cases
-console.log(duplicateEncode('decere'))//()()()
+console.log(duplicateEncode('decerere'))//()()()
