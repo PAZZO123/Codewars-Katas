@@ -5,3 +5,4 @@ function findOutlier(int){
   
 }
 //test cases
+console.log(findOutlier([2,6,8,10,3]))//3
