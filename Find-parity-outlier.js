@@ -4,3 +4,4 @@ function findOutlier(int){
   return even.length===1?even[0]:odd.length===1?odd[0]:undefined
   
 }
+//test cases
