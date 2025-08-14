@@ -10,3 +10,5 @@ for(let i=1;i<=Arr.length;i++){
 }
   return result.join(' ')
 }
+
+//test cases
