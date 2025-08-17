@@ -10,3 +10,4 @@ function isPrime(n) {
 return true
 }
 
+//test cases
