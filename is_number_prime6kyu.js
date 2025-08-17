@@ -8,6 +8,6 @@ function isPrime(n) {
   return n>1
 }
 //test cases
-console.log(isPrime(2))
-console.log(isPrime(1))
-console.log(isPrime(10))
+console.log(isPrime(2))//true
+console.log(isPrime(1))//false
+console.log(isPrime(10))//false
