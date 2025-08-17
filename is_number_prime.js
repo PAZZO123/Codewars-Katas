@@ -8,3 +8,4 @@ function isPrime(n) {
   return n>1
 }
 //test cases
+console.log(isPrime(2))
