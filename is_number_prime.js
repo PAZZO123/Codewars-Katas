@@ -3,11 +3,7 @@ function isPrime(n) {
   //first check whether n is less than 2 return f
   //if n is greater check if is divisible whit any
   //number less than or equal root n
-  if(n<2) return false
-  for(let i=2;i<=Math.sqrt(n);i++){
+  for(let i=2;i<=Math.sqrt(n);i++)
     if(n%i===0) return false
-  }
-return true
+  return n>1
 }
-
-//test cases
