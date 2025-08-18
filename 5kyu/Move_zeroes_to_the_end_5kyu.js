@@ -5,3 +5,4 @@ function moveZeros(arr) {
 }
 
 //test cases
+console.log(moveZeros([0,0,0,0,0,1,202,3030,"june",false,3,4,4,5,5,5,4,0,0,0,0,0,0,true]))
