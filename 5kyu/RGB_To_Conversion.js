@@ -5,3 +5,4 @@ function rgb(r, g, b) {
 
     return `${red}${green}${blue}`
 }
+//test cases
