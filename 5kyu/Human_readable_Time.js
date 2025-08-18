@@ -6,4 +6,4 @@ function humanReadable (sec) {
 }
 
 //test cases
-console.log(humanReadable(359999))
+console.log(humanReadable(359999))//99:59:59
