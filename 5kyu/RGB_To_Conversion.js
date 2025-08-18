@@ -6,4 +6,4 @@ function rgb(r, g, b) {
     return `${red}${green}${blue}`
 }
 //test cases
-console.log(rgb(255,255,255))
+console.log(rgb(255,255,255))//FFFFFF
