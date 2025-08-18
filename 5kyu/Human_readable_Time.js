@@ -6,3 +6,4 @@ function humanReadable (sec) {
 }
 
 //test cases
+console.log(humanReadable(359999))
