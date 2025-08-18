@@ -3,3 +3,5 @@ function moveZeros(arr) {
   let nonZeros=arr.filter(n=>n!==0)
   return [...nonZeros ,...zeros]
 }
+
+//test cases
