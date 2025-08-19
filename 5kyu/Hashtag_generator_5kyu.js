@@ -4,3 +4,4 @@ function generateHashtag (str) {
   return result(str)
 }
 //test cases
+console.log(generateHashtag('tick tok rwanda burundi'))//#TickTokRwandaBurundi
