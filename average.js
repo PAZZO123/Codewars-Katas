@@ -14,5 +14,5 @@ function average(...numbers) {
 
 console.log(average(2, 6));//->4
 console.log(average(2, 3, 3, 5, 7, 10));//->5
-console.log(average(7, 1432, 12, 13, 100));
+console.log(average(7, 1432, 12, 13, 100));//->312.8
 console.log(average());
