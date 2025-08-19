@@ -5,3 +5,5 @@ console.log(findAverage([1,2,3]))//2
 
 //7 kyu version
 var avg=(a)=>a.reduce((n,b)=>n+b,0)/a.length
+
+//average using rest parameters
