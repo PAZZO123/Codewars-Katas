@@ -3,3 +3,4 @@ function generateHashtag (str) {
   if(result(str).length===1 || result(str).length>140) return false
   return result(str)
 }
+//test cases
