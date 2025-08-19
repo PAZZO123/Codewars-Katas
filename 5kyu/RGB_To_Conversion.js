@@ -1,9 +1,6 @@
 function rgb(r, g, b) {
-  let red=r<0?"00":r<255?r.toString(16).padStart(2,'0').toUpperCase():"FF"
-  let blue=b<0?"00":b<255?b.toString(16).padStart(2,'0').toUpperCase():"FF"
-  let green=g<0?"00":g<255?g.toString(16).padStart(2,'0').toUpperCase():"FF"
-
-    return `${red}${green}${blue}`
+  const convert=(c)=>c<0?"00":c<=255?c.toString(16).padStart(2,'0').toUpperCase():"FF"
+    return `${convert(r)}${convert(g)}${convert(b)}`
 }
 //test cases
 console.log(rgb(255,255,255))//FFFFFF
