@@ -18,3 +18,4 @@ function high(str) {
 
   return bestWord;
 }
+//test cases
