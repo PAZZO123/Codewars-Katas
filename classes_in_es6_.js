@@ -24,6 +24,6 @@ class Bicycle extends Vehicle{
 
 const myVehicle = new Vehicle();//->create new object of vehicle
 myVehicle.honkHorn(); //-> beep beep
-const myBike = new Bicycle();
+const myBike = new Bicycle();//->create new object of Mybike
 myBike.honkHorn(); //-> honk honk
 
