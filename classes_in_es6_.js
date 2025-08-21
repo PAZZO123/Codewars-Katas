@@ -19,7 +19,7 @@ class Bicycle extends Vehicle{
     }
 }
 
-// your code goes here
+// test cases
 
 
 const myVehicle = new Vehicle();
