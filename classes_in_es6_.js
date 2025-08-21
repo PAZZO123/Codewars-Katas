@@ -22,7 +22,7 @@ class Bicycle extends Vehicle{
 // test cases
 
 
-const myVehicle = new Vehicle();
+const myVehicle = new Vehicle();//->create new object of vehicle
 myVehicle.honkHorn(); //-> beep beep
 const myBike = new Bicycle();
 myBike.honkHorn(); //-> honk honk
