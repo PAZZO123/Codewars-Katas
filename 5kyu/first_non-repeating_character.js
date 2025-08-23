@@ -3,4 +3,4 @@ function firstNonRepeatingLetter(s) {
   return s.charAt(arr.indexOf(arr.find((n,i)=>arr.indexOf(n)===arr.lastIndexOf(n))))||''
 }
 //test cases
-console.log(firstNonRepeatingLetter('totos'))
+console.log(firstNonRepeatingLetter('Totos'))
