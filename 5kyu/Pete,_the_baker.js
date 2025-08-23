@@ -5,3 +5,4 @@ function cakes(recipe, available) {
   }
   return result.includes(NaN)?0:Math.min(...result)
 }
+//test cases 
