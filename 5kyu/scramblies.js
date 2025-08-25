@@ -16,4 +16,4 @@ function scramble(str1, str2) {
   return true
 }
 //test cases
-console.log(scramble('cedewaraaossoqqyt', 'codewars'   ))
+console.log(scramble('cedewaraaossoqqyt', 'codewars'   ))//true
