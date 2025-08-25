@@ -10,3 +10,4 @@ function zeros (n) {
   }
   return count
 }
+//test cases
