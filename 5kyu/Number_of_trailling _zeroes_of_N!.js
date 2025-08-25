@@ -11,3 +11,4 @@ function zeros (n) {
   return count
 }
 //test cases
+console.log(zeros(30))//7
