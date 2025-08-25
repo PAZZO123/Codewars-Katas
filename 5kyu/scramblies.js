@@ -15,3 +15,4 @@ function scramble(str1, str2) {
   }
   return true
 }
+//test cases
