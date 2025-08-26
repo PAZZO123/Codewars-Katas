@@ -16,4 +16,4 @@ function findMissingLetter(arr) {
   return null; 
 }
 //test cases
-console.log(findMissingLetter(['o','q','r','s'])); 
+console.log(findMissingLetter(['o','q','r','s'])); //->p
