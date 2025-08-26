@@ -5,4 +5,4 @@ function isPangram(string){
 }
 //test cases
 console.log(isPangram('abcdefghijklmno'))//false
-console.log(isPangram('abcdefghijklmno'))//true
+console.log(isPangram('abcdefghijklmnopqrstuvwxyz'))//true
