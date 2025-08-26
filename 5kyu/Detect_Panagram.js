@@ -4,4 +4,5 @@ function isPangram(string){
   return arr.map(n=>string.toLowerCase().includes(n)).every(n=>n)
 }
 //test cases
+console.log(isPangram('abcdefghijklmno'))//false
 console.log(isPangram('abcdefghijklmno'))//true
