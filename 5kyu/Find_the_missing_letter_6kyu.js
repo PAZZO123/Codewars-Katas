@@ -15,5 +15,5 @@ function findMissingLetter(arr) {
 
   return null; 
 }
-
+//test cases
 console.log(findMissingLetter(['o','q','r','s'])); 
