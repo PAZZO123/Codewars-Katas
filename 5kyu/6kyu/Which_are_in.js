@@ -10,3 +10,4 @@ function inArray(array1,array2){
   }
   return Array.from(new Set(result)).sort()
 }
+//test cases
