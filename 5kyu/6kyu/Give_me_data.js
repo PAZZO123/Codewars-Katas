@@ -6,3 +6,4 @@ function hasPermission(db, cat) {
   return false
 }
 //test cases
+console.log(hasPermission(['*_allow','*_deny'], 'Gambling'))
