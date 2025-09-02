@@ -5,3 +5,4 @@ function hasPermission(db, cat) {
   if (db.includes('*_allow')) return true
   return false
 }
+//test cases
