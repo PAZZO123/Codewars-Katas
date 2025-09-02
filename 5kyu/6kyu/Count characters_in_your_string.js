@@ -6,3 +6,7 @@ for(let char of string){
 return seen 
 }
 
+//second way
+function count(str) {  
+   return (m = {}, str.split('').forEach((c) => m[c] = (m[c] || 0) + 1), m);
+}
