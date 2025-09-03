@@ -23,3 +23,4 @@ function decode(string) {
 }
 //test cases
 console.log(encode('Patricke'))//P1tr3ck2
+console.log(decode('P1tr3ck2'))
