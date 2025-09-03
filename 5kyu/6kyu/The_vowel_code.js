@@ -22,3 +22,4 @@ function decode(string) {
   return arr.join('')
 }
 //test cases
+console.log(encode('Patricke'))
