@@ -3,4 +3,4 @@ Array.prototype.toString = function() {
 
 }
 //test cases
-console.log([123,'pazzo'].toString())
+console.log([123,'pazzo'].toString())//"[123,'pazzo']"
