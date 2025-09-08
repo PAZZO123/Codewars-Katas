@@ -3,3 +3,4 @@ function removeSmallest(numbers) {
   return numbers.filter((n,i,arr)=>i!==arr.indexOf(min))
 }
 //test cases
+console.log(removeSmallest([1,2,3,4,6]))
