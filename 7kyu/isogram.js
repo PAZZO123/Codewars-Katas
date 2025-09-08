@@ -3,3 +3,4 @@ function isIsogram(str){
   return letters.every(n=>letters.indexOf(n)===letters.lastIndexOf(n))
 }
 //test cases
+console.log(isIsogram('hello brother'))
