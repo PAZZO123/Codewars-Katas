@@ -4,4 +4,4 @@ function maskify(cc) {
 return cc.slice(0,cc.length-4).split('').map(n=>'#').join('')+cc.slice(cc.length-4)
 }
 //test cases
-console.log(maskify('Tetcases'))
+console.log(maskify('Tetcases'))//####ases
