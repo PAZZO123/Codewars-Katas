@@ -4,3 +4,4 @@ function divisors(integer) {
   
 }
 //test cases
+console.log(divisors(25))
