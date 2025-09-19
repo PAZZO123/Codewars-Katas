@@ -6,3 +6,4 @@ function calculate(num1, num2) {
   const toDecimal=(num)=>num.split('').reverse().map((n,i)=>+n*2**i).reduce((acc,el)=>acc+el,0)
     return toDecimal(num1)+toDecimal(num2)
 }
+//test cases
