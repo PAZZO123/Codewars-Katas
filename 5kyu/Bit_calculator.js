@@ -7,4 +7,4 @@ function calculate(num1, num2) {
     return toDecimal(num1)+toDecimal(num2)
 }
 //test cases
-console.log(calculate('10','10'))//->4
+console.log(calculate('10','10'))//->45
