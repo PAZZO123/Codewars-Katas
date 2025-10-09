@@ -4,3 +4,4 @@ function whatListAmIOn(actions){
   
   return nice > naughty ? 'nice' : 'naughty';
 }
+//test cases
