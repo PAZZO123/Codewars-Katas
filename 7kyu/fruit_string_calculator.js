@@ -4,4 +4,4 @@ function calculate(string) {
   return string.includes('loses')?+a-(+b):+a+(+b)
 }
 //test cases
-console.log(calculate('48 eggs we loses 8 eggs'))
+console.log(calculate('48 eggs we loses 8 eggs'))//->40
