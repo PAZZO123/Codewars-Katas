@@ -5,4 +5,4 @@ function whatListAmIOn(actions){
   return nice > naughty ? 'nice' : 'naughty';
 }
 //test cases
-console.log(whatListAmIOn(['nabbi','sound','groom']))
+console.log(whatListAmIOn(['nabbi','sound','groom']))//->nice
