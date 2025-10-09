@@ -13,3 +13,4 @@ function orderWeight(strng) {
       return suma - sumb;
     })
     .join(' ');}
+    //test cases
