@@ -9,3 +9,4 @@ function calculate(num1, num2) {
 //test cases
 console.log(calculate('10','10'))//->4
 console.log(calculate('101','011'))//-8
+console.log(calculate('101','011'))//-8
