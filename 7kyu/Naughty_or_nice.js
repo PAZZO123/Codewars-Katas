@@ -6,3 +6,4 @@ function whatListAmIOn(actions){
 }
 //test cases
 console.log(whatListAmIOn(['nabbi','sound','groom']))//->nice
+console.log(whatListAmIOn(['gay','fork','king']))//->naughty
