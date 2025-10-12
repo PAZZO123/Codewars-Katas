@@ -5,3 +5,4 @@ function divisors(integer) {
 }
 //test cases
 console.log(divisors(25))
+console.log(divisors(9))
