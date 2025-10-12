@@ -5,3 +5,4 @@ function calculate(string) {
 }
 //test cases
 console.log(calculate('48 eggs we loses 8 eggs'))//->40
+console.log(calculate('48 eggs we gains 8 eggs'))//->56
