@@ -8,4 +8,4 @@ function generatePairs(n) {
   return result;
 }
 //test cases
-console.log(generatePairs(2))
+console.log(generatePairs(2))//[[0,0],[0,1],[0,2],[1,1],[1,2].....]
