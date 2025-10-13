@@ -8,4 +8,4 @@ function generatePairs(n) {
   return result;
 }
 //test cases
-console
+console.log(generatePairs(2))
