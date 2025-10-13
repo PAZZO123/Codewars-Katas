@@ -7,3 +7,5 @@ function generatePairs(n) {
   }
   return result;
 }
+//test cases
+console
