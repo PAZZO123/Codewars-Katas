@@ -6,4 +6,4 @@ var paintLetterboxes = function(start, end) {
   return result
 }
 // test cases
-console.log(paintLetterboxes(125, 132))
+console.log(paintLetterboxes(125, 132))//=> [1,9,6,3,0,1,1,1,1,1]
