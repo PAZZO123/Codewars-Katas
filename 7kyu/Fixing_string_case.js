@@ -3,3 +3,4 @@ function solve(s){
   let lower = s.length - upper
   return (upper > lower) ? s.toUpperCase() : s.toLowerCase() 
 }
+//test cases
