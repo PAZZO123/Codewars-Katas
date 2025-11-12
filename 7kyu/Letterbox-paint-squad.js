@@ -6,3 +6,4 @@ var paintLetterboxes = function(start, end) {
   return result
 }
 // test cases
+console.log(paintLetterboxes(125, 132))
