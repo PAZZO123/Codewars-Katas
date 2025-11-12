@@ -4,3 +4,4 @@ function solve(s){
   return (upper > lower) ? s.toUpperCase() : s.toLowerCase() 
 }
 //test cases
+console.log(solve('My name is patrick staton Mbabazi'))
