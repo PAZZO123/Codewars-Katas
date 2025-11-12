@@ -17,3 +17,4 @@ function vowelBack(s) {
 
   }).join('')
 }
+//test cases
