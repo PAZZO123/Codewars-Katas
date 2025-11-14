@@ -10,5 +10,5 @@ function isItBugged(code) {
   return true;
 }
 //test cases
-console.log(isItBugged("17-28-2024  04:34"))//->true
-console.log(isItBugged("17-28-2024  04:34"))//->false
+console.log(isItBugged("14-10-1066 12:00"))//->true
+console.log(isItBugged("14-200-2024 04:34"))//->false
