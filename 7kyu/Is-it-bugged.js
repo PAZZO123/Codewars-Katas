@@ -11,3 +11,4 @@ function isItBugged(code) {
 }
 //test cases
 console.log(isItBugged("17-28-2024  04:34"))//->true
+console.log(isItBugged("17-28-2024  04:34"))//->false
