@@ -6,3 +6,4 @@ function findInArray(array, iterator) {
   }
   return -1;
 }
+//test cases
