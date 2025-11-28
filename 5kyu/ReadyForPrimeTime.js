@@ -14,4 +14,4 @@ function isPrime(n){
                     return Array.from({length:num},(_,i)=>i+1).filter(n=>isPrime(n))
                      }
                        //test cases 
-                        console.log(prime(11))
+                        console.log(prime(11))//->[ 2, 3, 5, 7, 11 ]
