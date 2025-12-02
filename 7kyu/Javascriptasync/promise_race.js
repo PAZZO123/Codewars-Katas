@@ -10,4 +10,4 @@ const myPromise2 = new Promise((resolve, reject) => {
 // race 
 Promise.race([myPromise1, myPromise2])
   .then(result => console.log("Resolved:", result))
-  .catch(error => console.log("Rejected:", error));//Rejected Error2
+  .catch(error => console.log("Rejected:", error));//->Rejected Error2
