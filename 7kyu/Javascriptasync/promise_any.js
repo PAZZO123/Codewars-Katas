@@ -17,7 +17,6 @@ const myPromise3 = new Promise((resolve, reject) => {
   setTimeout(reject, 200, "error");
 });
 
-// Create another Promise
 const myPromise4 = new Promise((resolve, reject) => {
   setTimeout(reject, 100, "Error2");
 });
