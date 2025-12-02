@@ -13,7 +13,6 @@ Promise.any([myPromise1, myPromise2]).then((results) =>
    
 );
 
-//Look if both are rejected
 const myPromise3 = new Promise((resolve, reject) => {
   setTimeout(reject, 200, "error");
 });
