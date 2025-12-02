@@ -21,7 +21,7 @@ const myPromise4 = new Promise((resolve, reject) => {
   setTimeout(reject, 100, "Error2");
 });
 
-// Settle All
+// check if there is any one that has fulfuled or not
 Promise.any([myPromise3, myPromise4]).then((results) =>
    console.log(results)
 );//[AggregateError: All promises were rejected] {[errors]: [ 'error', 'Error2' ]}
