@@ -7,7 +7,7 @@ const myPromise2 = new Promise((resolve, reject) => {
   setTimeout(resolve, 100, "Queen");
 });
 
-// Settle All
+// Any in action 
 Promise.any([myPromise1, myPromise2]).then((results) =>
    console.log(results)//Queen
    
