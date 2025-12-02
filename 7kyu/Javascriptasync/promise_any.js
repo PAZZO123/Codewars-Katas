@@ -19,7 +19,7 @@ const myPromise3 = new Promise((resolve, reject) => {
 });
 
 // Create another Promise
-const myPromise2 = new Promise((resolve, reject) => {
+const myPromise4 = new Promise((resolve, reject) => {
   setTimeout(reject, 100, "Error2");
 });
 
