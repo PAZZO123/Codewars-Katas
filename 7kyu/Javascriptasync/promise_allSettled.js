@@ -9,5 +9,5 @@ const myPromise2 = new Promise((resolve, reject) => {
 
 // Settle All
 Promise.allSettled([myPromise1, myPromise2]).then((results) =>
-   console.log(results)
+   console.log(results)//->
 );
