@@ -24,6 +24,6 @@ const myPromise4 = new Promise((resolve, reject) => {
 });
 
 // Settle All
-Promise.any([myPromise1, myPromise2]).then((results) =>
+Promise.any([myPromise3, myPromise2]).then((results) =>
    console.log(results)
 );//[AggregateError: All promises were rejected] {[errors]: [ 'error', 'Error2' ]}
