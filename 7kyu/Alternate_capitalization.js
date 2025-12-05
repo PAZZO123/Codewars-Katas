@@ -3,3 +3,4 @@ function capitalize(s){
   let evenCapital=[...s].map((n,i)=>i%2===0?n.toUpperCase():n).join('')
   return [evenCapital,oddCapital];
 };
+//test cases
