@@ -4,3 +4,4 @@ function capitalize(s){
   return [evenCapital,oddCapital];
 };
 //test cases
+console.log(capitalize('codewar'))
