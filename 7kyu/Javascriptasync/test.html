@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script>
-    function loadScript(src, callback) {
-  let script = document.createElement('script');
-  script.src = src;
-  script.onload = () => callback(script);
-  document.head.append(script);
-}
+<html>
 
-loadScript('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js', script => {
-  alert(`Cool, the script ${script.src} is loaded`);
-  alert( _ ); // _ is a function declared in the loaded script
-});
-</script>
+<head>
+  <meta charset="utf-8">
+  <style>
+    .message-ball {
+      font-size: 20px;
+      line-height: 200px;
+      text-align: center;
+    }
+    .circle {
+      transition-property: width, height;
+      transition-duration: 2s;
+      position: fixed;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: red;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="go()">view the circle</button>
+
+  <script>
+
+  function go() {
+    showCircle(150, 150, 100, div => {
+      div.classList.add('message-ball');
+      div.append("Done By Pazzo ");
+    });
+  }
+
+  function showCircle(cx, cy, radius, callback) {
+    let div = document.createElement('div');
+    div.style.width = 0;
+    div.style.height = 0;
+    div.style.left = cx + 'px';
+    div.style.top = cy + 'px';
+    div.className = 'circle';
+    document.body.append(div);
+
+    setTimeout(() => {
+      div.style.width = radius * 2 + 'px';
+      div.style.height = radius * 2 + 'px';
+
+      div.addEventListener('transitionend', function handler() {
+        div.removeEventListener('transitionend', handler);
+        callback(div);
+      });
+    }, 0);
+  }
+  </script>
+
+
+</body>
 </html>
