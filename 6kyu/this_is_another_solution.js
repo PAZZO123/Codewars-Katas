@@ -22,3 +22,4 @@ function OnceNamedOne(first, last) {
 }
 //test cases
 let Nonce =new OnceNamedOne("Patrick", "Straton")
+console.log(Nonce.firstName)
