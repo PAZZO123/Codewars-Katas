@@ -20,3 +20,4 @@ function OnceNamedOne(first, last) {
     enumerable: true
   });
 }
+//test cases
