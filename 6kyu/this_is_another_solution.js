@@ -21,3 +21,4 @@ function OnceNamedOne(first, last) {
   });
 }
 //test cases
+let Nonce =new OnceNamedOne("Patrick", "Straton")
