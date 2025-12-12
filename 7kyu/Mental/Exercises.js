@@ -1,14 +1,14 @@
 function displayNumbers() {
   let count = 1;
 
-  const intervalId = setInterval(() => {
+  const Id = setInterval(() => {
     console.log(count++);
-  }, 2000); // every 2 seconds
+  }, 2000); 
 
   setTimeout(() => {
-    clearInterval(intervalId);
+    clearInterval(Id);
     console.log("Stopped!");
-  }, 5000); // stop after 5 seconds
+  }, 5000); 
 }
 
 displayNumbers();

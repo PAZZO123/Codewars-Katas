@@ -1,3 +1,4 @@
+const { XMLHttpRequest } = require("xmlhttprequest");
 function fetchToDo() {
   const xhr = new XMLHttpRequest();
 
