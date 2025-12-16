@@ -1,8 +1,9 @@
+
+const { XMLHttpRequest } = require("xmlhttprequest");
 function fetchToDoWithHeaders() {
   const xhr = new XMLHttpRequest();
   xhr.open("POST", "https://jsonplaceholder.typicode.com/todos/1");
 
-  // Custom headers
   xhr.setRequestHeader("User-Agent", "MyCustomAgent/1.0");
   xhr.setRequestHeader("Content-Type", "application/json");
 

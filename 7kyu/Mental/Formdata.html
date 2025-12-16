@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple FormData + Fetch</title>
+</head>
+<body>
+
+  <h2>Upload File with Fetch</h2>
+
+  <input type="file" id="fileInput" />
+  <button onclick="sendData()">Send File</button>
+
+  <script>
+    async function sendData() {
+      const fileInput = document.getElementById("fileInput");
+
+      if (!fileInput.files.length) {
+        alert("Please select a file first!");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("myFile", fileInput.files[0]);
+
+      try {
+        const response = await fetch("https://httpbin.org/post", {
+          method: "POST",
+          body: formData
+        });
+
+        const result = await response.json();
+        console.log("Server Response:", result);
+
+      } catch (error) {
+        console.error("Error uploading file:", error);
+      }
+    }
+  </script>
+
+</body>
+</html>
