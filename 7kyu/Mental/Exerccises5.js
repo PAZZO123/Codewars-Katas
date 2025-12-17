@@ -17,7 +17,7 @@ function fetchToDoWithHeaders() {
       console.log("Server returned status:", xhr.status);
     }
   };
- console.log(xhr.getAllResponseHeaders())
+// console.log(xhr.getAllResponseHeaders())
   xhr.onerror = () => {
     console.log("Network error");
   };
