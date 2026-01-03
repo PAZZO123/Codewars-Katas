@@ -15,6 +15,7 @@ function sendData(url,data){
     })
 
 }
+//function call
 sendData('https://jsonplaceholder.typicode.com/todos', payload)
 .then(res=>res.json())
 .then(res=>console.log('We Received ',res))
