@@ -24,9 +24,10 @@
 
   <script>
     async function sendData() {
+      //getting inputs 
       const name = document.getElementById("nameInput");
       const file = document.getElementById("fileInput");
-
+//checking conditions 
       if (!name.value) {
         alert("Please enter your name!");
         return;
@@ -36,6 +37,7 @@
         alert("Please select a file!");
         return;
       }
+      //initializing formdata
       const formData = new FormData();
       formData.append("username", name.value);       
       formData.append("myFile", file.files[0]);     
