@@ -157,37 +157,63 @@ let obj={
 
 //8. cors cross-origin requests
 
+//
+
 let JsonResponse;
 let ImageResponse;
 const imagestr='http://picsum.photos/id/237/300/200';
-function getData(){
-    let jsonValue=JSON.stringify(obj)
-    //console.log(jsonValue)
-    let file=new File([jsonValue],'mydata.json',{type:'application/json'});
-    let response= new Response(file,{
-        status:200,
-        statusText:'say my name',
-        headers:{
-            'content-type': 'application/json',
-            'content-length':file.size
-        },
-        method:'no-cors'
-    })
-    //console.log(response.headers.get('content-type'))
-    fetch(imagestr)
-    .then(res=>{
-        if(!res.ok) throw new Error('Invalid')
-            ImageResponse=res.blob()
-        return fetch(url)
-    })
-    .then(res=>{
-        if(!res.ok) throw new Error('Invalid2')
-            JsonResponse=res.json()
-            return Promise.all([JsonResponse,ImageResponse])
-    }
-    )
-    .then(([jsonValue,blob])=>console.log(jsonValue,blob))
-    .catch(err=>console.log(err.message))
-}
-getData()
+// function getData(){
+//     let jsonValue=JSON.stringify(obj)
+//     //console.log(jsonValue)
+//     let file=new File([jsonValue],'mydata.json',{type:'application/json'});
+//     let response= new Response(file,{
+//         status:200,
+//         statusText:'say my name',
+//         headers:{
+//             'content-type': 'application/json',
+//             'content-length':file.size
+//         },
+//         method:'no-cors'
+//     })
+//     //console.log(response.headers.get('content-type'))
+//     fetch(imagestr)
+//     .then(res=>{
+//         if(!res.ok) throw new Error('Invalid')
+//             ImageResponse=res.blob()
+//         return fetch(url)
+//     })
+//     .then(res=>{
+//         if(!res.ok) throw new Error('Invalid2')
+//             JsonResponse=res.json()
+//             return Promise.all([JsonResponse,ImageResponse])
+//     }
+//     )
+//     .then(([jsonValue,blob])=>console.log(jsonValue,blob))
+//     .catch(err=>console.log(err.message))
+// }
+// getData()
 //blob binary large object research then
+
+//9 . AbortController
+
+// const controller=new AbortController()
+// const signal=controller.signal
+// controller.abort()
+
+// function getData(){
+//     let request =new Request(imagestr,{signal:signal})
+
+// fetch(request)
+// .then(res=>{
+//     if(!res.ok) throw new Error('invalid')
+//         return res.blob()
+// })
+// .then(blob=>console.log(blob))
+// .catch(err=>console.error(err.message))
+// }
+
+// getData()
+// console.log(signal.aborted)
+
+//10. Progress
+
