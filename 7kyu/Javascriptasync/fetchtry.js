@@ -12,7 +12,7 @@
 
 //2. fetching
 
-const url='https://jsonplaceholder.typicode.com/users/10'
+
 // fetch('https://jsonplaceholder.typicode.com/users')
 //   .then(res => {
 //     if (!res.ok) throw new Error('Unable to fetch')
@@ -24,6 +24,7 @@ const url='https://jsonplaceholder.typicode.com/users/10'
 //   .catch(err => console.log(err.message))
 
 //3. async and await 
+ const url='https://jsonplaceholder.typicode.com/users/1'
 
 // async function getData(url){
 //     let res=await fetch(url)
@@ -35,9 +36,24 @@ const url='https://jsonplaceholder.typicode.com/users/10'
 //4.url Request
 
 //let url ='http://127.0.0.1:5500/local-sample.json?attempt=123&other=hello'
+
+
 function fetchData(url){
     let str=new URL(url)
-    console.log(str.host, str.origin, str.protocol, str.hostname, str.pathname)
-    fetch(str).then(res=>console.log(res.status))
+    //console.log(str.host, str.origin, str.protocol, str.hostname, str.pathname)
+    //fetch(str).then(res=>console.log(res.status))
+    const request=new Request(str,{
+        headers:{'x-steve':'hello'},
+        method:'GET',
+        cache:'no-store'
+    })
+    fetch(request)
+    .then(res=>{
+        if(!res.ok) throw new Error("Invalid Request")
+            console.log(res.status)
+            return res.json()
+    })
+    .then(data=>console.log(data))
+    .catch(err=>console.log(err.message))
 }
 fetchData(url)
