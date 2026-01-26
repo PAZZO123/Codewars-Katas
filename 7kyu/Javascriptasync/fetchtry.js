@@ -60,12 +60,12 @@
 
 //5. Response
 
-// let obj={
-//     id:crypto.randomUUID(),
-//     name:'the one who knocks',
-//     favColor:'Blue'
+let obj={
+    id:crypto.randomUUID(),
+    name:'the one who knocks',
+    favColor:'Blue'
 
-// }
+}
 // const imagestr='http://picsum.photos/id/237/300/200';
 // function getData(){
 //     let jsonValue=JSON.stringify(obj)
@@ -95,3 +95,45 @@
 //blob binary large object research then
 
 //6. generator
+
+
+// const imagestr='http://picsum.photos/id/237/300/200';
+// function getData(){
+//     let jsonValue=JSON.stringify(obj)
+//     //console.log(jsonValue)
+//     let file=new File([jsonValue],'mydata.json',{type:'application/json'});
+//     let response= new Response(file,{
+//         status:200,
+//         statusText:'say my name',
+//         headers:{
+//             'content-type': 'application/json',
+//             'content-length':file.size
+//         },
+//     })
+//     //console.log(response.headers.get('content-type'))
+//     fetch(imagestr)
+//     .then(res=>{
+//         if(!res.ok) throw new Error('Invalid')
+//             console.log(res.status)
+//         return res.blob()
+//     })
+//     .then(blob=>{console.log(blob)
+//     let url=URL.createObjectURL(blob)
+//     console.log(url)
+//     let img=document.getElementById('img')
+//     img.src=url})
+// }
+// getData()
+
+//7 . autho
+
+function getData(url){
+let urls=new URL(url)
+let sp=urls.searchParams
+sp.append('hello','Word')
+sp.append('api-key','ddshfadhieuhreuoirhyowrtuoew')
+
+let request=new Request(urls,{
+
+})
+}
