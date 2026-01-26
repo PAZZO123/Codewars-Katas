@@ -11,6 +11,7 @@
 // fetchData()
 
 //2. fetching
+
 const url='https://jsonplaceholder.typicode.com/users/10'
 // fetch('https://jsonplaceholder.typicode.com/users')
 //   .then(res => {
@@ -23,9 +24,20 @@ const url='https://jsonplaceholder.typicode.com/users/10'
 //   .catch(err => console.log(err.message))
 
 //3. async and await 
-async function getData(url){
-    let res=await fetch(url)
-    let jsonValue=await res.json()
-    console.log(jsonValue)
+
+// async function getData(url){
+//     let res=await fetch(url)
+//     let jsonValue=await res.json()
+//     console.log(jsonValue)
+// }
+// getData(url).catch(err=>console.warn((err.message).toUpperCase()))
+
+//4.url Request
+
+//let url ='http://127.0.0.1:5500/local-sample.json?attempt=123&other=hello'
+function fetchData(url){
+    let str=new URL(url)
+    console.log(str.host, str.origin, str.protocol, str.hostname, str.pathname)
+    fetch(str).then(res=>console.log(res.status))
 }
-getData(url).catch(err=>console.warn((err.message).toUpperCase()))
+fetchData(url)
