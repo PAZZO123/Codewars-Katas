@@ -127,13 +127,67 @@ let obj={
 
 //7 . autho
 
-function getData(url){
-let urls=new URL(url)
-let sp=urls.searchParams
-sp.append('hello','Word')
-sp.append('api-key','ddshfadhieuhreuoirhyowrtuoew')
+// function getData(url){
+// let urls=new URL(url)
+// let sp=urls.searchParams
+// sp.append('hello','Word')
+// sp.append('api-key','ddshfadhieuhreuoirhyowrtuoew')
 
-let request=new Request(urls,{
+// h=new Headers()
+// h.append('x-api-key','sjdndndihfhf')
+// h.append('Authorization','dhhooieiei')
 
-})
+// let request=new Request(urls,{
+//     method:'GET',
+//     headers:h,
+//     cache:'default',
+//     credentials:'same-origin'
+// })
+
+// fetch(request)
+// .then(res=>{
+//     if(!res.ok) throw new Error('Something is wrong')
+//         console.log(res.status)
+//         return res.text()
+// })
+// .then(data=>console.log(data))
+// .catch(err=>console.warn(err))
+// }
+// getData(url)
+
+//8. cors cross-origin requests
+
+let JsonResponse;
+let ImageResponse;
+const imagestr='http://picsum.photos/id/237/300/200';
+function getData(){
+    let jsonValue=JSON.stringify(obj)
+    //console.log(jsonValue)
+    let file=new File([jsonValue],'mydata.json',{type:'application/json'});
+    let response= new Response(file,{
+        status:200,
+        statusText:'say my name',
+        headers:{
+            'content-type': 'application/json',
+            'content-length':file.size
+        },
+        method:'no-cors'
+    })
+    //console.log(response.headers.get('content-type'))
+    fetch(imagestr)
+    .then(res=>{
+        if(!res.ok) throw new Error('Invalid')
+            ImageResponse=res.blob()
+        return fetch(url)
+    })
+    .then(res=>{
+        if(!res.ok) throw new Error('Invalid2')
+            JsonResponse=res.json()
+            return Promise.all([JsonResponse,ImageResponse])
+    }
+    )
+    .then(([jsonValue,blob])=>console.log(jsonValue,blob))
+    .catch(err=>console.log(err.message))
 }
+getData()
+//blob binary large object research then
