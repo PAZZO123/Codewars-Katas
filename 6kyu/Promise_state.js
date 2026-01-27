@@ -3,3 +3,13 @@ function getState(promise) {
   return Promise.race([promise,obj])
     .then(res=>(res===obj)?'pending':'fulfilled',(err)=>'rejected')
 }
+let P=new Promise(function(resolve, reject){
+    let decision=true
+    if(decision){
+        resolve('Success')
+    }
+    else{
+        reject()
+    }
+})
+console.log(getState(P))
