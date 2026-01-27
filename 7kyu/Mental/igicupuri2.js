@@ -26,7 +26,6 @@ async function getFastPosts() {
             return res.json()
     })
   })
-  // Promise.race returns the first fulfilled promise
   return Promise.any(request);
 }
 
