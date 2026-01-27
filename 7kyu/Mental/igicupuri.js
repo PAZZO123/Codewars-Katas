@@ -47,7 +47,7 @@ let responses= await Promise.all([fetch('https://jsonplaceholder.typicode.com/us
 
  const [users,todos]=data
  console.log(todos.length)
-
+let arr=[]
 //console.log(users[0].id)
 for (let i = 0; i < users.length; i++) {
     users[i].todos = []; 
@@ -55,6 +55,7 @@ for (let i = 0; i < users.length; i++) {
     for (let j = 0; j < todos.length; j++) {
       if (users[i].id === todos[j].userId) {
        // console.log(todos[j])
+       arr.push(todos[j])
         users[i].todos.push(todos[j]);
       }
     }
