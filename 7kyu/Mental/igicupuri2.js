@@ -13,22 +13,23 @@ To ensure a seamless user experience, you are supposed to create a function call
 Example of how the function should be used
 */
 // getFastPosts() code here...
-async function getFastPosts() {
+function getFastPosts() {
   const urls = [
     "https://dummyjson.com/posts",
     "https://this-may-not-exist.com/posts",
-    "https://jsonplaceholder.typicode.com/posts"
+    "https://jsonplaceholder.typicode.com/posts",
   ];
 
-  const request=urls.map(url=>{
-    return fetch(url).then(res=>{
-        if(!res.ok) throw new Error('Fetch Failed!')
-            return res.json()
-    })
-  })
-  return Promise.any(request);
-}
+  const fetchPromises = urls.map((url) =>
+    fetch(url)
+  .then(res=>{
+    if(!res.ok)console.log('Something Wrong Happened!')
+        return res.json()
+  }).catch(err=>new Promise(()=>{}))
+  );
 
+  return Promise.race(fetchPromises);
+}
 
 getFastPosts()
 .then((posts) => {
