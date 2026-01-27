@@ -1,9 +1,9 @@
 async function fetchWithRetry(url , times){
     for(let time=1; time<=times; time++){
         try{
-        let res=await fetch(ur)
+        let res=await fetch(url)
         if(!res.ok) throw new Error("Bad Result")
-        let data=res.json()
+        let data=await res.json()
     console.log(data)
     }
     catch(err){
