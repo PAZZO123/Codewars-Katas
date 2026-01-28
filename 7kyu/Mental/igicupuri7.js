@@ -33,18 +33,20 @@ returns just the addresses of the first 3 users.
 ]
 */
 function getAdress(){
-    fetch('https://jsonplaceholder.typicode.com/users')
+   return  fetch('https://jsonplaceholder.typicode.com/users')
     .then(res=>{
-        if(!res) throw new Error("Fetch Can't Work!")
+        if(!res.ok) throw new Error("Fetch Can't Work!")
             return res.json()
     })
-    .then(res=>{
-        let Arr=[]
-     for(let r of res){
-        //console.log()
-     Arr.push({address:r.address})
-     }
-    console.log(Arr.slice(0,3))
+    .then(users=>{
+        return users.slice(0,3).map(user=>({address:user.address}))
+
+    //     let Arr=[]
+    //  for(let r of res){
+    //     //console.log()
+    //  Arr.push({address:r.address})
+    //  }
+    // console.log(Arr.slice(0,3))
     })
 }
-getAdress()
+getAdress().then(res=>console.log(res))
