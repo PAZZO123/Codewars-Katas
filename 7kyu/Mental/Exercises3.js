@@ -13,4 +13,4 @@ async function fetchWithRetry(url , times){
     }
 }
 
-fetchWithRetry("https://jsonplaceholder.typicode.com/todos/1", 3);
+fetchWithRetry("https://jsonplaceholdber.typicode.com/todos/1", 3);

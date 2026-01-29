@@ -3,6 +3,7 @@ function displayNumbers() {
 
   const Id = setInterval(() => {
     console.log(count++);
+    //if(count===)
   }, 2000); 
 
   setTimeout(() => {

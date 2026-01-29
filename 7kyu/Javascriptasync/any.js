@@ -5,5 +5,5 @@ Promise.reject(new Error('failure #3'))
 ];
 Promise.any(promises).then(
 (result) => {console.log(result)},
-(error) => {console.log(error)}
+(error) => {console.log([...error.errors])}
 )

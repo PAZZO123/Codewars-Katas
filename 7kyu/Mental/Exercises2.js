@@ -1,7 +1,7 @@
 async function fetchWithTimeout(url) {
   const controller = new AbortController();
     const signal=controller.signal
-  const timer = setTimeout(() => controller.abort(), 1000); 
+  const timer = setTimeout(() => controller.abort(), 10000); 
   console.log(signal.aborted)//always false
  
   try {

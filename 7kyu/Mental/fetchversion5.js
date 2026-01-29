@@ -13,10 +13,10 @@ function sendData(url,data){
                },
         body:JSON.stringify(data)
     })
+    .then(res=>res.json())
 
 }
 //function call
 sendData('https://jsonplaceholder.typicode.com/todos', payload)
-.then(res=>res.json())
 .then(res=>console.log('We Received ',res))
 .catch(err=>console.log(err.name))

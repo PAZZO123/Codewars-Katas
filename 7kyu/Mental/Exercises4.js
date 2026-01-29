@@ -1,9 +1,11 @@
 const { XMLHttpRequest } = require("xmlhttprequest");
 function fetchToDo(){
     let xhr =new XMLHttpRequest()
+    
     xhr.open('GET',"https://jsonplaceholder.typicode.com/todos/1")
 
     xhr.onprogress=(event)=>{
+        console.log('Reached')
          if (event.lengthComputable) {
            console.log(`Received ${event.loaded} of ${event.total} bytes`);
            } else {

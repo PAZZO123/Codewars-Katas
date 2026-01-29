@@ -19,15 +19,15 @@ function sendData() {
 
   xhr.onload = function () {
     if (xhr.status === 200) {
-      console.log("✅ Server Response:");
+      console.log("Server Response:");
       console.log(JSON.parse(xhr.responseText));
     } else {
-      console.log("❌ Request failed:", xhr.status);
+      console.log("Request failed:", xhr.status);
     }
   };
 
   xhr.onerror = function () {
-    console.log("❌ Network error");
+    console.log("Network error");
   };
 
   const payload = JSON.stringify({

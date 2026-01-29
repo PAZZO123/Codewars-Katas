@@ -13,12 +13,7 @@ To ensure a seamless user experience, you are supposed to create a function call
 Example of how the function should be used
 */
 // getFastPosts() code here...
-function getFastPosts() {
-  const urls = [
-    "https://dummyjson.com/posts",
-    "https://this-may-not-exist.com/posts",
-    "https://jsonplaceholder.typicode.com/posts",
-  ];
+function getFastPosts(urls) {
 
   const fetchPromises = urls.map((url) =>
     fetch(url)
@@ -30,8 +25,12 @@ function getFastPosts() {
 
   return Promise.race(fetchPromises);
 }
-
-getFastPosts()
+  const urls = [
+    "https://dummyjson.com/posts",
+    "https://this-may-not-exist.com/posts",
+    "https://jsonplaceholder.typicode.com/posts",
+  ];
+getFastPosts(urls)
 .then((posts) => {
     console.log(posts)
 }).catch(err=>console.log(err))
