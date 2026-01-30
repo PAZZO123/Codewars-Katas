@@ -10,7 +10,7 @@ function fetchData(url,ms){
  let controller=new AbortController()
 let signal=controller.signal
 //start timer to see
-setTimeout(function(){
+let timerId=setTimeout(function(){
     controller.abort()
 },ms)
 
