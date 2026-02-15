@@ -22,5 +22,5 @@ function decode(string) {
   return arr.join('')
 }
 //test cases
-console.log(encode('Patricke'))//P1tr3ck2 -> will  be logged in  terminal
+console.log(encode('Patricke'))//P1tr3ck2 -> will  be logged in  terminal after it is 
 console.log(decode('P1tr3ck2'))//Patricke
