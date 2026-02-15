@@ -23,4 +23,4 @@ function decode(string) {
 }
 //test cases
 console.log(encode('Patricke'))//P1tr3ck2 -> will  be logged in  terminal after it is  encoded fully
-console.log(decode('P1tr3ck2'))//Patricke
+console.log(decode('P1tr3ck2'))//Patricke ->
