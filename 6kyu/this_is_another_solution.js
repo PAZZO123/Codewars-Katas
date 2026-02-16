@@ -24,5 +24,5 @@ function OnceNamedOne(first, last) {
 let Nonce =new OnceNamedOne("Patrick", "Straton")
 console.log(Nonce.firstName)
 Nonce.firstName="Hubert"//->Patrick
-console.log(Nonce.firstName)//Patrick
+console.log(Nonce.firstName)//->Patrick
 console.log(Nonce.fullName)//Patrick Straton 
