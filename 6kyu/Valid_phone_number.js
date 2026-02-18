@@ -2,5 +2,5 @@ const validPhoneNumber=(nbr)=> nbr=== `(${nbr.slice(1,4)}) ${nbr.slice(6,9)}-${n
   
 //test cases
 const phone ="250781484407";
-console.log(validPhoneNumber(phone))
+console.log(validPhoneNumber(phone)) //valid
 
